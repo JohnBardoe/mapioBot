@@ -1,2 +1,9 @@
 # mapioBot
-Bot for mapio game
+Bot for mapio game <br>
+<b>Main window:</b> <br>
+![alt text](https://raw.githubusercontent.com/JohnBardoe/mapioBot/Screenshots/form1.jpg)<br>
+<b>Settings window:</b> <br>
+![alt text](https://raw.githubusercontent.com/JohnBardoe/mapioBot/Screenshots/form2.jpg)<br>
+<b>What's it like to ddos your own server:</b><br>
+![alt text](https://raw.githubusercontent.com/JohnBardoe/mapioBot/Screenshots/running.jpg)<br>
+<b>Have fun!</b>
