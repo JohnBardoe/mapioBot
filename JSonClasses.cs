@@ -54,7 +54,7 @@ namespace jsonSender
                             exit("Server returned bad response. " + Environment.NewLine + "In other words, smth went wrong.");
                         
                     }
-                    else exit("Server returned bad response. " + Environment.NewLine + "In other words, backend sucks.");
+                    else exit("Server returned null response. " + Environment.NewLine + "Reduce rps count a bit pls");
                 }
                 catch (System.Reflection.TargetInvocationException e)
                 {

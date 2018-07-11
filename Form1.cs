@@ -16,6 +16,7 @@ namespace MapioBot
         public Point MouseLoc;
         private volatile bool _stillRunning = false;
         private volatile string base_url = "http://" + SessionSettings.Default.ip;
+
         public Form1()
         {
             InitializeComponent();
@@ -103,7 +104,10 @@ namespace MapioBot
                         Thread.Sleep(delay);
                     }
                 }));
-                Thread.Sleep(1000);
+                if (delay < 200)
+                    Thread.Sleep(50);
+                else
+                    Thread.Sleep(1000);
             }
             while (t.Count > 0)
             {
@@ -111,6 +115,8 @@ namespace MapioBot
                 t.Remove(firstFinishedTask);
                 AppendTextBox("Thread finished! " + t.Count + " left!" + Environment.NewLine);
             }
+            if(_stillRunning)
+                button3_Click(this, new EventArgs());
         }
 
         private void button3_Click(object sender, EventArgs e)
